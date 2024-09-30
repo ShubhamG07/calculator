@@ -1,0 +1,80 @@
+
+
+.container{
+    height: 578px;
+    width: 507px;
+    border: 2px solid black;
+    margin-left: 30%;
+    margin-top: 20px;
+   
+}
+
+.displaydata{
+    height: 235px;
+    width: 100%;
+    border: 10px solid black;
+    box-sizing: border-box;
+}
+
+.displaydata h1{
+    margin-top: 0px;
+    text-align: center;
+    background-color: rgb(62, 83, 62);
+    color: white;
+    padding: 10px;
+}
+
+#dataContainer{
+    height: 50px;
+    position: relative;
+    top: 85px;
+    text-align: end;
+    width: 99%;
+    font-size: 45px;
+    overflow:hidden;
+    font-weight: 700;
+    /* border: 2px solid blue; */
+}
+
+button{
+    margin: -2px;
+    height: 89px;
+    width: 102px;
+    font-size: 20px;
+}
+
+button:hover{
+    filter: brightness(60%);
+}
+
+button:active{
+    filter: brightness(100%);
+}
+
+.function{
+    background-color: blue;
+    color: white;
+}
+
+.red{
+    background-color: red;
+    color: white;
+}
+
+.green{
+    background-color: green;
+    color: white;
+}
+
+.del{
+    background-color: orangered;
+}
+
+/* .large{
+    font-size: 30px;
+} */
+
+/* .xlarge{
+    font-size: 60px;
+    padding: 20px;
+} */
