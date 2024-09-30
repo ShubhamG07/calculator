@@ -20,28 +20,21 @@ function factorial(n){
 }
     let item = e.target;
 
-      // Check if the last character is an operator and the current key is also an operator
+      
       const operators = ['+', '-', '*', '/', '^', '!','%'];
     
-    //   if (operators.includes(item.innerHTML) && operators.includes(currentInput.slice(-1))) {
-    //       // Replace the last operator with the new one
-    //       currentInput = currentInput.slice(0, -1) + item.innerHTML;
-    //   } 
+    
  
     if(item.classList[0]==="red"){
         currentInput='';
         dataContainer.innerHTML=currentInput;
     }
-
-    // else if(item.classList[0]==="function"){
-    //     if(currentInput[(currentInput.length)-1]==="+"||currentInput[(currentInput.length)-1]==="-" ){
-    //         currentInput[(currentInput.length)-1]=item.innerText;
-    //     }
-    //     else{
-    //         currentInput += item.innerText;
-    //     }
-
-    // }
+    
+    else if(operators.includes(currentInput[0])){
+        dataContainer.innerHTML='';
+        return;
+    }
+   
 
     else if(item.classList[0]==="function" && operators.includes(currentInput.slice(-1))){
         if(item.classList[1]==="exp"){
