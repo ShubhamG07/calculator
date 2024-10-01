@@ -1,4 +1,4 @@
-
+/* class for our calculator container  */
 
 .container{
     height: 578px;
@@ -8,6 +8,8 @@
     margin-top: 20px;
    
 }
+
+/* class for our display section of calculator */
 
 .displaydata{
     height: 235px;
@@ -24,6 +26,8 @@
     padding: 10px;
 }
 
+/* css using id of display data of our calculator  */
+
 #dataContainer{
     height: 50px;
     position: relative;
@@ -38,6 +42,8 @@
     /* border: 2px solid blue; */
 }
 
+/* class for automatic scrollbar appear for display data  */
+
 #dataContainer::-webkit-scrollbar{
     height: 10px;
     background-color: blue;
@@ -45,6 +51,8 @@
     
    
 }
+
+/* css for all buttons  */
 
 button{
     margin: -2px;
@@ -61,30 +69,30 @@ button:active{
     filter: brightness(100%);
 }
 
+/* css for button with function  */
+
 .function{
     background-color: blue;
     color: white;
 }
+
+/* red class css for clear screen (C) button  */
 
 .red{
     background-color: red;
     color: white;
 }
 
+/* green class css for equals to (=) button  */
+
 .green{
     background-color: green;
     color: white;
 }
 
+/* css for del button  */
+
 .del{
     background-color: orangered;
 }
 
-/* .large{
-    font-size: 30px;
-} */
-
-/* .xlarge{
-    font-size: 60px;
-    padding: 20px;
-} */
