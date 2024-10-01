@@ -7,9 +7,13 @@ const maxLength =20;
 
 buttonContainer.addEventListener("click", displayData);
 
+event.stopPropagation();
+
 // function on click of button 
 
 function displayData(e){
+   
+   
  
     dataContainer.scrollLeft = dataContainer.scrollWidth;
 
@@ -40,7 +44,7 @@ function factorial(n){
 
     // checking no operator appear on empty screen 
     
-    else if(operators.includes(currentInput[0])){
+    else if(currentInput.length === 1 && operators.includes(currentInput[0])){
         dataContainer.innerHTML='';
         return;
     }
@@ -110,7 +114,7 @@ function factorial(n){
     }
 
     // final else condition to add any keypress innerHTML in display screen 
-    
+
     else{
         currentInput += item.innerText;
         dataContainer.innerHTML=currentInput;
