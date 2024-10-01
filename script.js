@@ -1,20 +1,19 @@
 let currentInput ='';
 const dataContainer = document.getElementById("dataContainer");
 const buttonContainer = document.querySelector(".buttonContainer");
-const maxLength =20;
 
 // Event listener for clicking of button 
 
 buttonContainer.addEventListener("click", displayData);
 
-event.stopPropagation();
+
 
 // function on click of button 
 
 function displayData(e){
+
    
    
- 
     dataContainer.scrollLeft = dataContainer.scrollWidth;
 
 
@@ -30,6 +29,13 @@ function factorial(n){
 // getting clicked item as item variable 
 
     let item = e.target;
+
+    // preventing button container from being called 
+
+    if(item.classList[0]==="buttonContainer"){
+        dataContainer.innerHTML=currentInput;
+        return;
+    }
 
 // arrays of all operator to verify if our displayData not already contain an operator before 
 
@@ -120,4 +126,5 @@ function factorial(n){
         dataContainer.innerHTML=currentInput;
     }
 }
+
 
