@@ -28,12 +28,22 @@
     height: 50px;
     position: relative;
     top: 85px;
+    padding: 5px;
     text-align: end;
     width: 99%;
     font-size: 45px;
-    overflow:hidden;
+    overflow-x: auto;
+    overflow-y: hidden;
     font-weight: 700;
     /* border: 2px solid blue; */
+}
+
+#dataContainer::-webkit-scrollbar{
+    height: 10px;
+    background-color: blue;
+    scroll-behavior: auto;
+    
+   
 }
 
 button{
