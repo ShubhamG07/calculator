@@ -6,10 +6,8 @@ const maxLength =20;
 buttonContainer.addEventListener("click", displayData);
 
 function displayData(e){
-//    if(currentInput.length>maxLength){
-//     dataContainer.style.fontSize=20px;
-//     return;
-//    }
+ 
+    dataContainer.scrollLeft = dataContainer.scrollWidth;
 
    
 function factorial(n){
